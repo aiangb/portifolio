@@ -63,7 +63,7 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --orange-yellow-crayola: #ffdb70;
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
@@ -1140,12 +1140,18 @@ main {
   overflow: hidden;
 }
 
+
 .mapbox figure { height: 100%; }
 
 .mapbox iframe {
   width: 100%;
   height: 100%;
   border: none;
+  filter: grayscale(1) invert(1);
+}
+
+.contact-form iframe {
+
   filter: grayscale(1) invert(1);
 }
 
@@ -1197,7 +1203,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   gap: 10px;
   padding: 13px 20px;
   border-radius: 14px;
-  font-size: var(--fs-6);
+  font-size: var(--fs-6);icon-box
   box-shadow: var(--shadow-3);
   z-index: 1;
   transition: var(--transition-1);
